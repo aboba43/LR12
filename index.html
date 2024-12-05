@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning App</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="google-translate.png" type="image/png">
+
+</head>
+<body>
+    <h1>Language Learning App</h1>
+    <div class="difficulty">
+        <label><input type="radio" name="difficulty" value="easy" checked> Beginner</label>
+        <label><input type="radio" name="difficulty" value="medium"> Intermediate</label>
+        <label><input type="radio" name="difficulty" value="hard"> Advanced</label>
+    </div>
+    <div id="card">Word</div>
+    <input type="text" id="input" placeholder="Enter translation">
+    <div class="stats">
+        Step: <span id="currentStep">1</span>/<span id="totalSteps">10</span><br>
+        Correct: <span id="correctCount">0</span> | Incorrect: <span id="incorrectCount">0</span>
+    </div>
+    <div class="modal-overlay"></div>
+    <div class="modal">
+        <h2>Your Results</h2>
+        <p id="results"></p>
+        <button id="closeModal">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
